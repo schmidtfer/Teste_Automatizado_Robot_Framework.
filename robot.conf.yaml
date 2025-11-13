@@ -1,0 +1,5 @@
+robot:
+  outputdir: results
+  output: results/output.xml
+  log: results/log.html
+  report: results/report.html
