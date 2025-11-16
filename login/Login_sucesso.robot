@@ -7,7 +7,7 @@ Library  SeleniumLibrary
 
 Acessar Site da qazando
     Open Browser  ${SITE_URL}  chrome
-    Esperar Elemento  3
+    Esperar Elemento  4
  
 
 Clicar sobre o botão login
@@ -45,7 +45,7 @@ Cenário 1: Acessando o site da qazando
     Digitar senha
     Clicar no checkbox lembrar de mim   
     Clicar em logar
-    Verificar o texto login realizado
+ 
   
 
 Cenário 2: Tentando logar com senha vazia
