@@ -22,16 +22,17 @@ C:\Users\Usuário\AppData\Local\Programs\Python\Python312\Scripts\
 
 - Colar o chromedriver dentro do caminho acima.
 
-# Para rodar o teste: 
+# Para rodar o teste e todos os teste: 
  - robot nome do teste.robot
+ - robot .
 
- # Para rodar teste específico
+ # Para rodar teste específico  
 - robot --test "Cenário 1: e o nome do cenário" nome do teste.robot
 
 # Screenshots:
 - O projeto captura prints automaticamente apenas em casos de falha.
 - Os prints são salvos na pasta Screenshots.
 
-# Pasta results:
+# Pasta reports:
 - Contém todos os logs, relatórios e saídas de execução dos testes.
-- Comando utilizado para gerar os resultados dentro da pasta:  robot --outputdir results .
+- Comando utilizado para gerar os resultados dentro da pasta:  robot --outputdir reports e o nome da pasta(login)

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.5 on win32)" generated="2025-11-15T22:31:18.978780" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\git\Robot\login">
+<suite id="s1-s1" name="Login ainda nao tem conta" source="C:\git\Robot\login\Login_ainda_nao_tem_conta.robot">
+<test id="s1-s1-t1" name="Cenário 1: Acessando o site da qazando - Ainda não tem conta" line="31">
+<kw name="Acessar Site da qazando">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:19.117097" level="INFO">Opening browser 'chrome' to base url 'https://automationpratice.com.br'.</msg>
+<arg>${SITE_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-15T22:31:19.116927" elapsed="2.097987"/>
+</kw>
+<kw name="Esperar Elemento">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${tempo}s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-15T22:31:21.216083" elapsed="0.002472"/>
+</kw>
+<arg>3</arg>
+<status status="PASS" start="2025-11-15T22:31:21.215434" elapsed="0.003389"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:19.116296" elapsed="2.102667"/>
+</kw>
+<kw name="Clicar sobre o botão login">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:21.220943" level="INFO">Clicking element 'xpath://a[@href='/login']'.</msg>
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T22:31:21.220198" elapsed="0.441581"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:21.219618" elapsed="0.442460"/>
+</kw>
+<kw name="Clicar sobre o link ainda não tem conta">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>id:materialUnchecked</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-11-15T22:31:21.664443" elapsed="0.563177"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:22.228245" level="INFO">Clicking element 'id:createAccount'.</msg>
+<msg time="2025-11-15T22:31:23.426573" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/selenium-screenshot-11.png"&gt;&lt;img src="../Screenshots/selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-11-15T22:31:23.427947" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a id="createAccount" class="active" href="/register"&gt;...&lt;/a&gt; is not clickable at point (399, 676). Other element would receive the click: &lt;div class="footer_left_side"&gt;...&lt;/div&gt;
+  (Session info: chrome=142.0.7444.60)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6580fa235
+	0x7ff657e52650
+	0x7ff657be16dd
+	0x7ff657c424c9
+	0x7ff657c3fe4e
+	0x7ff657c3cd71
+	0x7ff657c3bc10
+	0x7ff657c2d3a8
+	0x7ff657c62b0a
+	0x7ff657c2cc36
+	0x7ff657c8baba
+	0x7ff657c2b0ed
+	0x7ff657c2bf63
+	0x7ff658125d60
+	0x7ff65811fe8a
+	0x7ff658141005
+	0x7ff657e6d73e
+	0x7ff657e74e3f
+	0x7ff657e5b7e4
+	0x7ff657e5b99f
+	0x7ff657e41908
+	0x7ffdf3e1e8d7
+	0x7ffdf59ac53c
+</msg>
+<arg>id:createAccount</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-11-15T22:31:22.227963" elapsed="1.208547">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a id="createAccount" class="active" href="/register"&gt;...&lt;/a&gt; is not clickable at point (399, 676). Other element would receive the click: &lt;div class="footer_left_side"&gt;...&lt;/div&gt;
+  (Session info: chrome=142.0.7444.60)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6580fa235
+	0x7ff657e52650
+	0x7ff657be16dd
+	0x7ff657c424c9
+	0x7ff657c3fe4e
+	0x7ff657c3cd71
+	0x7ff657c3bc10
+	0x7ff657c2d3a8
+	0x7ff657c62b0a
+	0x7ff657c2cc36
+	0x7ff657c8baba
+	0x7ff657c2b0ed
+	0x7ff657c2bf63
+	0x7ff658125d60
+	0x7ff65811fe8a
+	0x7ff658141005
+	0x7ff657e6d73e
+	0x7ff657e74e3f
+	0x7ff657e5b7e4
+	0x7ff657e5b99f
+	0x7ff657e41908
+	0x7ffdf3e1e8d7
+	0x7ffdf59ac53c
+</status>
+</kw>
+<status status="FAIL" start="2025-11-15T22:31:21.663230" elapsed="1.773704">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a id="createAccount" class="active" href="/register"&gt;...&lt;/a&gt; is not clickable at point (399, 676). Other element would receive the click: &lt;div class="footer_left_side"&gt;...&lt;/div&gt;
+  (Session info: chrome=142.0.7444.60)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6580fa235
+	0x7ff657e52650
+	0x7ff657be16dd
+	0x7ff657c424c9
+	0x7ff657c3fe4e
+	0x7ff657c3cd71
+	0x7ff657c3bc10
+	0x7ff657c2d3a8
+	0x7ff657c62b0a
+	0x7ff657c2cc36
+	0x7ff657c8baba
+	0x7ff657c2b0ed
+	0x7ff657c2bf63
+	0x7ff658125d60
+	0x7ff65811fe8a
+	0x7ff658141005
+	0x7ff657e6d73e
+	0x7ff657e74e3f
+	0x7ff657e5b7e4
+	0x7ff657e5b99f
+	0x7ff657e41908
+	0x7ffdf3e1e8d7
+	0x7ffdf59ac53c
+</status>
+</kw>
+<kw name="Finalizando o teste">
+<status status="NOT RUN" start="2025-11-15T22:31:23.438233" elapsed="0.000087"/>
+</kw>
+<status status="FAIL" start="2025-11-15T22:31:19.115755" elapsed="4.323052">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a id="createAccount" class="active" href="/register"&gt;...&lt;/a&gt; is not clickable at point (399, 676). Other element would receive the click: &lt;div class="footer_left_side"&gt;...&lt;/div&gt;
+  (Session info: chrome=142.0.7444.60)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6580fa235
+	0x7ff657e52650
+	0x7ff657be16dd
+	0x7ff657c424c9
+	0x7ff657c3fe4e
+	0x7ff657c3cd71
+	0x7ff657c3bc10
+	0x7ff657c2d3a8
+	0x7ff657c62b0a
+	0x7ff657c2cc36
+	0x7ff657c8baba
+	0x7ff657c2b0ed
+	0x7ff657c2bf63
+	0x7ff658125d60
+	0x7ff65811fe8a
+	0x7ff658141005
+	0x7ff657e6d73e
+	0x7ff657e74e3f
+	0x7ff657e5b7e4
+	0x7ff657e5b99f
+	0x7ff657e41908
+	0x7ffdf3e1e8d7
+	0x7ffdf59ac53c
+</status>
+</test>
+<status status="FAIL" start="2025-11-15T22:31:18.999920" elapsed="4.442046"/>
+</suite>
+<suite id="s1-s2" name="Login sucesso" source="C:\git\Robot\login\Login_sucesso.robot">
+<test id="s1-s2-t1" name="Cenário 1: Acessando o site da qazando" line="41">
+<kw name="Acessar Site da qazando">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:23.454500" level="INFO">Opening browser 'chrome' to base url 'https://automationpratice.com.br'.</msg>
+<arg>${SITE_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-15T22:31:23.454285" elapsed="1.990446"/>
+</kw>
+<kw name="Esperar Elemento">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${tempo}s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-15T22:31:25.445851" elapsed="0.002997"/>
+</kw>
+<arg>3</arg>
+<status status="PASS" start="2025-11-15T22:31:25.445154" elapsed="0.004129"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:23.453987" elapsed="1.995466"/>
+</kw>
+<kw name="Clicar sobre o botão login">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:25.451046" level="INFO">Clicking element 'xpath://a[@href='/login']'.</msg>
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T22:31:25.450570" elapsed="0.455291"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:25.450012" elapsed="0.456090"/>
+</kw>
+<kw name="Digitar email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:25.907246" level="INFO">Typing text 'fernanda@qzando.com' into text field 'id:user'.</msg>
+<arg>id:user</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T22:31:25.906976" elapsed="0.476823"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:25.906513" elapsed="0.477449"/>
+</kw>
+<kw name="Digitar senha">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:26.385516" level="INFO">Typing text '123456' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T22:31:26.385165" elapsed="0.131467"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:26.384690" elapsed="0.132092"/>
+</kw>
+<kw name="Clicar no checkbox lembrar de mim">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>id:materialUnchecked</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-11-15T22:31:26.517646" elapsed="0.298522"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:26.817017" level="INFO">Clicking element 'id:materialUnchecked'.</msg>
+<arg>id:materialUnchecked</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T22:31:26.816585" elapsed="0.217653"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:26.517272" elapsed="0.517393"/>
+</kw>
+<kw name="Clicar em logar">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:27.037306" level="INFO">Clicking element 'id:btnLogin'.</msg>
+<arg>id:btnLogin</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T22:31:27.036683" elapsed="0.193917"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:27.035716" elapsed="0.195227"/>
+</kw>
+<kw name="Verificar o texto login realizado">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:27.315756" level="INFO">${texto_realizado} = Login realizado</msg>
+<var>${texto_realizado}</var>
+<arg>id:swal2-title</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T22:31:27.233259" elapsed="0.082613"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${texto_realizado}</arg>
+<arg>Login realizado</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-11-15T22:31:27.316334" elapsed="0.000643"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:27.232236" elapsed="0.084985"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:23.453417" elapsed="3.864172"/>
+</test>
+<test id="s1-s2-t2" name="Cenário 2: Tentando logar com senha vazia" line="51">
+<kw name="Acessar Site da qazando">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:27.320851" level="INFO">Opening browser 'chrome' to base url 'https://automationpratice.com.br'.</msg>
+<arg>${SITE_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-15T22:31:27.320323" elapsed="2.320485"/>
+</kw>
+<kw name="Esperar Elemento">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${tempo}s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-15T22:31:29.642334" elapsed="0.007112"/>
+</kw>
+<arg>3</arg>
+<status status="PASS" start="2025-11-15T22:31:29.641301" elapsed="0.008356"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:27.319610" elapsed="2.330180"/>
+</kw>
+<kw name="Clicar sobre o botão login">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:29.651979" level="INFO">Clicking element 'xpath://a[@href='/login']'.</msg>
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T22:31:29.651551" elapsed="0.413923"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:29.650683" elapsed="0.415011"/>
+</kw>
+<kw name="Digitar email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:30.066681" level="INFO">Typing text 'fernanda@qzando.com' into text field 'id:user'.</msg>
+<arg>id:user</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T22:31:30.066434" elapsed="0.466896"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:30.066066" elapsed="0.467531"/>
+</kw>
+<kw name="Digitar senha">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:30.535454" level="INFO">Typing text '' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T22:31:30.535016" elapsed="0.173549"/>
+</kw>
+<arg>${EMPTY}</arg>
+<status status="PASS" start="2025-11-15T22:31:30.534087" elapsed="0.174752"/>
+</kw>
+<kw name="Clicar em logar">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:30.711364" level="INFO">Clicking element 'id:btnLogin'.</msg>
+<arg>id:btnLogin</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T22:31:30.710913" elapsed="0.183776"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:30.709773" elapsed="0.185228"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:27.318969" elapsed="3.577811"/>
+</test>
+<test id="s1-s2-t3" name="Cenário 3: Tentando logar com login vazio" line="58">
+<kw name="Acessar Site da qazando">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:30.903045" level="INFO">Opening browser 'chrome' to base url 'https://automationpratice.com.br'.</msg>
+<arg>${SITE_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-15T22:31:30.902329" elapsed="2.132108"/>
+</kw>
+<kw name="Esperar Elemento">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${tempo}s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-15T22:31:33.035370" elapsed="0.007598"/>
+</kw>
+<arg>3</arg>
+<status status="PASS" start="2025-11-15T22:31:33.034849" elapsed="0.008531"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:30.901020" elapsed="2.142521"/>
+</kw>
+<kw name="Clicar sobre o botão login">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:33.045250" level="INFO">Clicking element 'xpath://a[@href='/login']'.</msg>
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T22:31:33.044961" elapsed="0.629488"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:33.044326" elapsed="0.630292"/>
+</kw>
+<kw name="Digitar email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:33.676374" level="INFO">Typing text '' into text field 'id:user'.</msg>
+<arg>id:user</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T22:31:33.676035" elapsed="0.593936"/>
+</kw>
+<arg>${EMPTY}</arg>
+<status status="PASS" start="2025-11-15T22:31:33.675050" elapsed="0.595163"/>
+</kw>
+<kw name="Digitar senha">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:34.271406" level="INFO">Typing text '123456' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T22:31:34.271108" elapsed="0.290306"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:34.270639" elapsed="0.291194"/>
+</kw>
+<kw name="Clicar em logar">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-15T22:31:34.564595" level="INFO">Clicking element 'id:btnLogin'.</msg>
+<arg>id:btnLogin</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T22:31:34.563959" elapsed="0.187696"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:34.562949" elapsed="0.189125"/>
+</kw>
+<status status="PASS" start="2025-11-15T22:31:30.898653" elapsed="3.854810"/>
+</test>
+<status status="PASS" start="2025-11-15T22:31:23.444633" elapsed="11.311221"/>
+</suite>
+<status status="FAIL" start="2025-11-15T22:31:18.979660" elapsed="15.778777"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login" id="s1" pass="3" fail="1" skip="0">Login</stat>
+<stat name="Login ainda nao tem conta" id="s1-s1" pass="0" fail="1" skip="0">Login.Login ainda nao tem conta</stat>
+<stat name="Login sucesso" id="s1-s2" pass="3" fail="0" skip="0">Login.Login sucesso</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

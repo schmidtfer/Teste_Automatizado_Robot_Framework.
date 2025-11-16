@@ -7,9 +7,8 @@ Library  SeleniumLibrary
 
 Acessar Site da qazando
     Open Browser  ${SITE_URL}  chrome
+    Esperar Elemento  3
  
-Aguardar site carregar
-    Sleep  7s
 
 Clicar sobre o botão login
     Click Element  xpath://a[@href='/login']
@@ -30,35 +29,35 @@ Clicar no checkbox lembrar de mim
 Clicar em logar
     Click Element  id:btnLogin
 
+Verificar o texto login realizado 
+    ${texto_realizado}  Get Text  id:swal2-title
+    Should Be Equal As Strings  ${texto_realizado}  Login realizado
+
+Esperar Elemento
+    [Arguments]  ${tempo}
+    Set Selenium Implicit Wait  ${tempo}s
+
 ** Test Cases **
 Cenário 1: Acessando o site da qazando
     Acessar Site da qazando
-    Aguardar site carregar
     Clicar sobre o botão login
-    Aguardar site carregar
     Digitar email
     Digitar senha
-    Clicar no checkbox lembrar de mim
-    Aguardar site carregar
+    Clicar no checkbox lembrar de mim   
     Clicar em logar
-    
+    Verificar o texto login realizado
+  
 
 Cenário 2: Tentando logar com senha vazia
     Acessar Site da qazando
-    Aguardar site carregar
     Clicar sobre o botão login
-    Aguardar site carregar
     Digitar email
     Digitar senha  ${EMPTY}
-    Aguardar site carregar
     Clicar em logar
 
 Cenário 3: Tentando logar com login vazio
     Acessar Site da qazando
-    Aguardar site carregar
     Clicar sobre o botão login
-    Aguardar site carregar
     Digitar email  ${EMPTY}
     Digitar senha
-    Aguardar site carregar
     Clicar em logar
